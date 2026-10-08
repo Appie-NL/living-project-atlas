@@ -16,6 +16,14 @@ This repository contains the **v1 specification, implementation brief, and runna
 
 The template runs locally and stores demo interactions in the browser. It does **not** include an operational database, authentication, connected execution backend, or verified product implementation. A resulting application may claim v1 implementation complete only after meeting [ACCEPTANCE.md](ACCEPTANCE.md), including real execution from the atlas.
 
+## Use, limitations, and responsibility
+
+Living Project Atlas provides a method, specification, and demonstration template. It does not guarantee project outcomes, correct agent behavior, security, or suitability for a particular purpose. The software and accompanying documentation are provided "as is", without warranties, under the [MIT license](LICENSE), which also contains a limitation of liability. These provisions apply only to the extent permitted by applicable law; they do not exclude liability that cannot lawfully be excluded.
+
+Users and implementers are responsible for evaluating suitability for their use case, securing their own implementation, configuring agent permissions and access to data, and independently checking generated code, decisions, and results before relying on them. Director approval and passing the example tests do not establish that a system is safe, legally compliant, or ready for production.
+
+Before connecting agents to real systems, use appropriately limited permissions, test in an isolated environment, protect credentials and personal data, and provide backups and recovery procedures. Obtain appropriate professional review where a failure could have significant consequences. The included template is a local demonstration, not a production service; implementation requirements in this repository describe work that still needs to be built and verified for each project.
+
 ## Try the visual template
 
 With Node.js 20 or later installed, run from the repository root:
