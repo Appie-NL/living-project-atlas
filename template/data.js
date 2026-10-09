@@ -5,6 +5,8 @@ export const project = {
   tagline: 'A shared space. A simpler way to book it.',
   description: 'A thoughtful booking service for independent studios. Find the right space, reserve a time, and give everyone a clear view of what happens next.',
   milestone: 'The first reliable booking',
+  phase: 'Atlas build / handover validation',
+  phaseNote: 'Illustrative phase only. Real execution and operational handover have not been verified.',
   baseline: {
     version: 'C-01', status: 'Illustrative approved baseline',
     purpose: 'Help small creative teams reserve shared studios without messages, spreadsheets, or double bookings.',

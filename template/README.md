@@ -2,6 +2,8 @@
 
 A runnable, adaptable frontend with an explicitly fictional example project. English interface; no external dependencies, fonts, images, or services.
 
+For a new target project, begin with [START.md](../START.md) and follow the current phase. Running the unchanged example for a concept preview is allowed; its linked implementation documents are not required reading for that preview.
+
 ## Run
 
 Install Node.js 20 or later, then run in this directory:
@@ -25,6 +27,10 @@ Do not open `index.html` through `file://`; its JavaScript modules need HTTP. Fo
 7. Use **Change decision** on a recorded decision or its changelog entry. Choose a new outcome, add a reason, and save. Open **Previous decisions** to inspect the earlier outcome, or reopen the proposal for consideration.
 
 No actual execution occurs. The start control is disabled; pause and cancellation stay unacknowledged. Use **About this template** to export your local demo snapshot or reset the example through a confirmation dialog.
+
+## Inspect the basis for work
+
+The overview, agreed direction, and work board show an illustrative phase and concept reference. Open **Inspect work** or **Review result** to read **Basis for this work**. Related decisions reflect current local demo state, including changed or reopened decisions. These are current planning references, not a package sent to an agent or proof of execution authorization.
 
 ## Customize after concept approval
 

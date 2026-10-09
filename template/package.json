@@ -1,10 +1,15 @@
 {
   "name": "living-project-atlas-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "A dependency-free, interactive visual template for Living Project Atlas.",
-  "scripts": { "start": "node server.mjs", "test": "node --test tests/*.test.mjs" },
-  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT"
 }
