@@ -1,6 +1,6 @@
 # The Visual Template
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 The reusable frame of Living Project Atlas is supplied in [template/](template/). It is an English, responsive, dependency-free browser application. It runs with the included local Node.js server and requires no package installation or external services.
 
@@ -86,3 +86,9 @@ Replace fictional evidence with actual artifacts and check results. Replace the 
 Use [template/README.md](template/README.md) to run the preview. The supplied automated checks cover demo transition semantics. Manually verify navigation, search, map links and lenses, decisions, result review, history, reload persistence, keyboard use, narrow layouts, and the disconnected execution state.
 
 These checks qualify the visual template only. They do not satisfy the operational service acceptance criteria in [ACCEPTANCE.md](ACCEPTANCE.md).
+
+## Phase and task context in the preview
+
+The overview, concept page, and work board show an explicitly illustrative build/handover phase and baseline C-01. Inspecting work or a review result shows current planning references: objective, scope, related decisions and revisions, dependencies, and criteria. These references update when demo decisions change. They are not immutable records of what an agent received, and do not authorize execution.
+
+During the real build, replace these projections with authenticated phase and attempt records as required by [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md). Preserve historical packages separately from current decisions and expose stale or incomplete context honestly.

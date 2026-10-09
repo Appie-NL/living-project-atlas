@@ -1,6 +1,6 @@
 # Project Record Templates
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 Use the project brief and concept forms as versioned files before the service exists. At handover, load and verify them in the service while preserving provenance. Thereafter the service stores authoritative operational versions, and readable exports are snapshots rather than a parallel approval system. Empty templates must never appear as actual completed work.
 

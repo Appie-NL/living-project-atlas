@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.1 — 2026-10-09
+
+- Add START.md as the single agent entry point and a compact root AGENTS.md pointer.
+- Introduce conditional concept, build/handover, and operate phase entries with explicit reading lists and durable transition records.
+- Replace the initial full implementation prompt with phase-directed loading, preserving existing valid approvals and requiring explicit Director acceptance of operational handover.
+- Specify immutable per-attempt context, actual payload delivery, scoped additional reads, freshness checks, and recovery through CONTEXT_PROTOCOL.md.
+- Align activation, architecture, records, workflow, product requirements, and acceptance scenarios with the context protocol.
+- Show illustrative phase, baseline, and task context in the visual template without claiming real dispatch, access isolation, or operational enforcement.
+- Retain the MIT license and README explanation of use, limitations, and responsibility.
+
+Release status: updated method, specification, and frontend demonstration. Real context delivery and execution remain mandatory target-implementation work.
+
 ## 1.0.0 — 2026-10-08
 
 First method, specification, and visual template release of Living Project Atlas.

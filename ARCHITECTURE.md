@@ -1,6 +1,6 @@
 # Service Architecture
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 This is a technology-neutral implementation contract. Select concrete tools during bootstrap based on the target environment. Do not claim that the components or integrations described here already exist in this repository.
 
@@ -128,3 +128,9 @@ Verify the service's content against the approved baseline, including the origin
 Running a private project service and publishing a public atlas are separate operations. v1 requires the operational service, not public hosting.
 
 If read-only public sharing is added, build a scoped projection that excludes private records, execution controls, credentials, internal artifacts, and hidden search data. Mark it as a dated snapshot when it is not live. Do not expose operational routes merely because public documentation is available.
+
+## Context delivery and phase enforcement
+
+Implement [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md) at the coordinator, service, and runner boundary. Persist phase transitions with approval or handover evidence. Assemble immutable attempt packages from authoritative project records and retain the actual delivered payload reference, adapter acknowledgment, and additional read manifest. Validate required context and current authorization before dispatch; revalidate affected actions when decisions change. Context freshness is separate from worker completion.
+
+Expose current phase, leading baseline, and task/attempt context through authorized queries. Recovery reloads durable context and reconciles attempts instead of replaying old prompts blindly. Document whether the executor has a fresh session, selected file access, or broader access; prompt routing alone is not sandboxing.

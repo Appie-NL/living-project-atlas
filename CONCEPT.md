@@ -1,12 +1,12 @@
 # Concept Development and Director Approval
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 This stage happens before the atlas is built. The Director and assistant work in the initial project conversation, supported by durable project files. It establishes what the project should achieve and why the proposed direction is worth pursuing.
 
 ## 1. Prepare the project
 
-Confirm the workspace, load this specification, preserve existing instructions, and prepare a small place for the brief, research, and decisions. Identify available capabilities and practical constraints. Do not create the atlas application, connect production execution, or begin product implementation at this point.
+Confirm the workspace, load only the concept-phase reading specified by [START.md](START.md) and its current phase entry, preserve existing instructions, and prepare a small place for the brief, research, and decisions. Identify available capabilities and practical constraints. Do not create the atlas application, connect production execution, or begin product implementation at this point.
 
 A request to use Living Project Atlas authorizes this preparation and conceptual work. It does not by itself approve a yet-unwritten product concept.
 
@@ -61,6 +61,8 @@ This is a mandatory Director decision. It cannot be automatically accepted under
 If the Director asks for changes, revise the baseline and present the affected choices again. Do not ask repeatedly for approval of an unchanged version already approved. A material change to the agreed purpose, scope, constraints, or direction invalidates the affected build authorization until the Director approves the revision.
 
 ## 6. Build the atlas from the approved baseline
+
+The following describes the eventual outcome. Do not follow its implementation links during concept development unless a specific unresolved concept question requires them and the reason is recorded. Once the transition condition in phases/01-concept.md holds, follow its next-phase link to obtain the required build reading.
 
 Once approval is recorded, perform the technical readiness checks and build the bounded atlas service. Its initial topics, navigation, decisions, priorities, and first milestone must reflect the approved concept. Do not substitute a generic dashboard disconnected from the product.
 

@@ -2,13 +2,15 @@
 
 **Understand the project. Direct the work. See the evidence. Keep improving.**
 
-Version **1.0.0** · [MIT license](LICENSE)
+Version **1.0.1** · [MIT license](LICENSE)
 
 Living Project Atlas is a method, specification, and reusable visual template for a project workspace that also runs the project's execution process. It brings product knowledge, decisions, work, evidence, and progress into one web service.
 
 The human **Director** explores the project, approves proposals, changes direction, and reviews results inside the atlas. A coordinator turns that direction into bounded work, dispatches it through a real execution connection, checks the outcome, and updates the same workspace.
 
 **First agree on the concept; then build the atlas; then direct the project through it.** The Director gives explicit approval of the conceptual foundation before the atlas is built. After operational handover, the atlas is the primary interface for subsequent execution and iteration.
+
+> **Starting a project with an agent? Begin at [START.md](START.md).** It is the single entry point. Follow its phase reading route; do not preload this repository or recursively follow its links. This README is an overview for people.
 
 ## What this release contains
 
@@ -42,32 +44,33 @@ The reusable frame is already built. For a new project, previewing it is allowed
 ## Start a project with this repository
 
 ```text
-Use https://github.com/Appie-NL/living-project-atlas to start this project.
-Read VERSION, README.md, and PROMPT.md from the same revision, then the linked
-specification files needed for implementation.
+Start this project using Living Project Atlas:
+https://github.com/Appie-NL/living-project-atlas/blob/main/START.md
+
+Read START.md first. Resolve the method version and repository commit, then
+read only the current phase entry and its required references from that commit.
+Do not scan the full method repository, recursively follow links, or open a
+next-phase entry before its transition condition is met and recorded.
 
 Project: [name and workspace]
 Purpose: [the outcome I want]
 Users: [who the product serves]
 First useful capability: [one small end-to-end outcome]
-Constraints: [scope, existing environment, time, budget, language]
+Constraints: [scope, environment, time, budget, language]
 
-Prepare the project, then help me define its goals, boundaries, and direction.
-Research alternatives, challenge assumptions, and present a versioned concept
-baseline. Do not build the atlas until I explicitly approve that baseline and
-the bounded atlas-build scope.
-
-After approval, use the included visual template to build the atlas from the
-agreed concept, replace all example content, connect real execution,
-and autonomously implement AGENT_ACTIVATION.md: let me nudge agents from tasks
-and decisions to prepare proposals, start approved work, and assess changes.
-Connect the runner, durable queue, and real feedback; do not leave this as a
-manual prompt-transfer step. Demonstrate a full proposal -> approval -> execution -> verification ->
-review cycle inside it. After handover, route subsequent direction, work,
-decisions, and progress through the atlas.
+Prepare the workspace and help me refine the concept. Do not build the atlas
+until I explicitly approve the current conceptual baseline and bounded build
+scope. After verified, accepted handover, manage execution and iteration
+through the atlas, including contextual requests to real agents.
 ```
 
 Repository access must actually be available. If the assistant cannot read a required file, provide a local copy. Record the specification version and revision used by the target project.
+
+## Reading by phase
+
+`START.md` keeps a small fixed core active and routes new projects to concept development. Each phase entry defines required reading, optional references, durable context, and a conditional link to the next phase. Concept approval unlocks the build instructions; verified and Director-accepted handover unlocks operation. Operational assignments receive selected, versioned context from the atlas. Links alone do not authorize advancing a phase.
+
+This is a reading protocol, not a filesystem access restriction. An adapter with broad repository access can still read other files; the implemented atlas must disclose that limitation and use supported access controls where appropriate. See [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md) during implementation.
 
 ## From idea to operational atlas
 
@@ -128,7 +131,9 @@ flowchart LR
 
 | File | Purpose |
 |---|---|
-| [PROMPT.md](PROMPT.md) | Instructions for the assistant implementing this project |
+| [START.md](START.md) | Single agent entry point, fixed rules, and phase selection |
+| [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md) | Versioned task context, validation, delivery, and recovery |
+| [PROMPT.md](PROMPT.md) | Build-phase instructions, loaded after concept approval |
 | [CONCEPT.md](CONCEPT.md) | Joint concept development and explicit Director approval before the atlas build |
 | [PRODUCT_SPEC.md](PRODUCT_SPEC.md) | Product scope, Director experience, and v1 boundaries |
 | [WORKFLOWS.md](WORKFLOWS.md) | Approval, execution, steering, verification, and recovery behavior |

@@ -1,8 +1,10 @@
 # Implementation Instructions
 
-Version: **1.0.0**
+Version: **1.0.1**
 
-Prepare the user's project and establish an approved conceptual foundation before building Living Project Atlas. Follow the user's scope and higher-priority instructions. Read this complete file and the relevant specification documents before claiming the method is loaded. Preserve unrelated existing work and user choices.
+This is a build-phase reference, not the project entry point. Begin at [START.md](START.md). Read this complete file only when phases/02-build.md authorizes it, or for a specifically recorded earlier information need. An early read does not authorize building. Follow the current phase's reading list; links in this file are not a request to preload every reference. Preserve existing work and higher-priority instructions.
+
+Prepare the user's project and establish an approved conceptual foundation before building Living Project Atlas. Implement [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md): immutable assignment packages, actual delivery records, current authorization checks, and Director-visible task context. Follow the phase route for concept approval and accepted handover.
 
 ## The required outcome
 

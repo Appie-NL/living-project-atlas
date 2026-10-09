@@ -1,6 +1,6 @@
 # Operational Workflows
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 The project begins with the pre-service sequence below. After concept approval, atlas construction, and operational handover, the remaining workflows use the atlas as their control interface and durable record.
 
@@ -124,3 +124,9 @@ A milestone is complete only after its required packages and system-level outcom
 The updated atlas becomes the starting point for the next request. The Director can select a topic, inspect evidence and limitations, and propose another outcome without opening a separate task interface.
 
 Accepted history remains stable. New knowledge may mark an accepted capability's evidence stale or reveal a regression, but must not erase the earlier decision. Show the current issue and its relationship to the earlier acceptance.
+
+## Phase reading and context checks
+
+Use [START.md](START.md) and its conditional phase route for adoption. Record each phase transition, including the Director's concept approval before build and explicit handover acceptance after mandatory verification. Merely reading the next phase or completing a job cannot advance project authority.
+
+For every operational assignment follow [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md): select relevant records, validate required context and authorization before dispatch, retain the actual package supplied, and log additional scoped retrievals. A missing source blocks dependent execution. A changed decision triggers impact assessment and supported holds; preserve old packages and create a newly versioned package when resumed work is authorized. Review uses the delivered revision and applicable criteria, not a fresh interpretation of old approval.

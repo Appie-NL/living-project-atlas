@@ -1,6 +1,6 @@
 # Product Specification
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 ## 1. Product purpose
 
@@ -122,3 +122,9 @@ Choose deployment scope during bootstrap. A local service with a local worker is
 Credential rotation, infrastructure repair, or restoring the service after a severe failure may require an operator outside the atlas. Record the incident and resulting state changes when the service is available again. Do not use these exceptions as the normal workflow for approving or starting project work.
 
 External instructions are captured as attributed requests through an authorized command path. If their identity or authority cannot be established, keep them as unapproved proposals. All current execution must remain visible in the atlas.
+
+## Phase and assignment visibility
+
+Show the verified current phase and leading conceptual baseline with approval provenance. Each task and attempt provides a "Basis for this work" view containing its goal, approved scope, governing decisions and versions, dependencies, acceptance criteria, authority, and missing or stale context. Distinguish current planning references from the immutable package actually supplied to a historical attempt. A new decision never silently relabels old work.
+
+Implement [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md). After real handover checks pass, record the Director's explicit acceptance of operational handover before entering the operating phase. The supplied frontend illustrates context only; it does not enforce phases or transmit packages to an executor.

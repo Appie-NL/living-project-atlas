@@ -1,6 +1,6 @@
 # Records and State
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 The schemas below define responsibilities and invariants. The implementation must provide actual validation, storage, and transition enforcement.
 
@@ -32,6 +32,9 @@ Keep immutable revisions for specifications, proposals, criteria, evidence, and 
 | Activity event | Ordered ID, actor, command, subject, before/after revisions, attributable summary |
 | Dispatch intent | Authorized command, job identity, delivery state, retry metadata |
 | Agent request | Authenticated actor, task or decision target, expected target and decision revisions, requested action, guidance, authorization reference, idempotency key, lifecycle state, linked job or existing attempt, blocker, timestamps |
+| Phase context | Current lifecycle phase, method commit, leading baseline and approval, active assignment, blockers, phase entry path, transition evidence and Director handover acceptance |
+| Context package | Immutable package ID and revision, attempt, fixed core, selected source revisions and purposes, actual delivered payload reference/hash, criteria, authority, freshness checks, missing inputs, adapter acknowledgment |
+| Context read event | Attempt and package, additional authorized source revision, retrieval purpose and outcome, timestamp |
 | Execution connection | Project executor and runner identity, authorized workspace, capability snapshot, availability, last contact, credential reference without secret values |
 
 Store method version and source revision on the project so the implementation knows which contract it adopted.
@@ -42,7 +45,9 @@ Track the initial project lifecycle separately from operational work:
 
 `preparing -> concept_development -> awaiting_concept_approval -> atlas_build -> handover_validation -> operating`
 
-Only an explicit Director approval of the current concept baseline permits entry into `atlas_build`; technical readiness must also be satisfied before construction work starts. Revision requests return the concept to development. A material pre-handover change returns affected construction to a hold until the revised baseline is approved. Successful service construction alone does not permit entry into `operating`: the handover criteria must pass.
+Only an explicit Director approval of the current concept baseline permits entry into `atlas_build`; technical readiness must also be satisfied before construction work starts. Revision requests return the concept to development. A material pre-handover change returns affected construction to a hold until the revised baseline is approved. Successful service construction alone does not permit entry into `operating`: the handover criteria must pass and the Director must explicitly accept operational handover. Persist both records before advancing the phase.
+
+Use [CONTEXT_PROTOCOL.md](CONTEXT_PROTOCOL.md) to assemble immutable attempt inputs from these records. New decisions may invalidate queued packages; never overwrite historical attempt context to match the latest decision.
 
 The pre-service approval record is imported with its original provenance. It must never be represented as a browser command that occurred before the service existed.
 

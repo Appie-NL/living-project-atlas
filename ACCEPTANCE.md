@@ -1,6 +1,6 @@
 # Implementation Acceptance
 
-Version: **1.0.0**
+Version: **1.0.1**
 
 These are acceptance scenarios for an implemented Living Project Atlas service. They have not been executed merely because this specification exists. Record the actual application revision, environment, steps, observed result, artifacts, reviewer, and limitations when running them.
 
@@ -137,6 +137,20 @@ Required for operational handover. Use the connected real executor and retain re
 | Director completes the journey on desktop and a narrow viewport | Target, effect, connection state, acknowledgement, and next step remain understandable and keyboard accessible |
 
 Pass condition: the Director initiates both decision analysis and approved task execution entirely inside the atlas, obtains real output, and can continue the workflow without copying prompts, sending an external chat message, or launching a terminal command. Initial connection setup may happen during bootstrap. Deliver actual runner startup and recovery instructions and record unsupported controls as limitations.
+
+## L. Phased reading and actual context delivery
+
+- Start a clean target project with only START.md and a short user brief. Inspect the observed file-read record: fixed core and concept entry/required reading are loaded, not a whole-repository dump or future-phase preload. Record any necessary optional reads and reasons. Do not claim this proves technical access isolation.
+- Provide no concept approval, then a research-only approval: neither advances to build. Record a valid baseline approval and verify the build entry is loaded before implementation, with the adopted method commit kept consistent.
+- Complete technical handover checks without Director handover acceptance: phase remains handover validation. Record explicit acceptance and verify transition to operation. Resume a session and verify it restores the current phase and references without discarding valid prior approval.
+- Dispatch a real bounded task. Compare its stored package and actual executor input: core rules, selected sources, revisions, scope, criteria, authority, limits, and dependencies arrive intact. Show adapter delivery evidence and actual output; listing links without resolving required content does not pass.
+- Remove or deny a required source and introduce conflicting inputs: dependent execution stays blocked. Retrieve a needed extra dependency within scope and record its purpose and revision. Unrelated method files are not automatically appended.
+- Change a decision between queueing and launch: the stale package is rejected or held. During active work, verify impact assessment and supported hold behavior before affected actions; a newly authorized attempt receives a new package. Old context and late results remain attributable to the original decision.
+- Restart the runner or resume after conversation compaction. Verify phase, package, authorization, attempts, and side effects are reconciled without duplicate dispatch or fabricated approvals.
+- In the Director interface, inspect current phase, baseline, task basis, missing context, and a historical attempt whose decision has changed. Current planning context and historical delivered context remain distinguishable.
+- Record whether the adapter enforces selected file access, reuses session history, or exposes the full workspace. Test any claimed access restriction; do not label a prompt-only rule as enforced isolation.
+
+These operational checks require the target service and real executor. Template UI inspection and local model tests alone do not satisfy them.
 
 ## Evaluation record
 
